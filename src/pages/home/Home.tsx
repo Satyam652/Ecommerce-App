@@ -1,22 +1,26 @@
 import { useState } from "react";
-import { BottomView, Navbar, NewsLetterView } from "../../components";
+import {
+  BottomView,
+  Navbar,
+  NewsLetterView,
+  TopDiscountBanner,
+} from "../../components";
 import ProductView from "../../components/productView/ProductView";
-import { productList, productList2 } from "../../constants";
+import { Routes, productList, productList2 } from "../../constants";
 import BottomBannerView from "./components/BottomBannerView";
 import MiddleView from "./components/MiddleView";
 import TopBannerView from "./components/TopBannerView";
+import { useNavigate } from "react-router-dom";
 
 const Home = () => {
   const [isActiveButton, setIsActiveButton] = useState<number>(1);
+
+  const navigate = useNavigate();
   return (
     <>
-      <div className="bg-black text-white text-center text-sm py-1">
-        <label>Get 25% OFF on your first order.</label>
-        <button className="ml-1">Order Now</button>
-      </div>
-
+      <TopDiscountBanner />
       <Navbar />
-      <TopBannerView />
+      <TopBannerView onClick={() => navigate(Routes.products)} />
       <MiddleView />
 
       <label className="font-medium text-neutral-400 text-xs block text-center">

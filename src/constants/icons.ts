@@ -25,6 +25,7 @@ import instagram from "../assets/icons/Instagram.svg";
 import masterCard from "../assets/icons/Mastercard.svg";
 import amex from "../assets/icons/Amex.svg";
 import visa from "../assets/icons/Visa.svg";
+import rightArrow from "../assets/icons/Chevron Right.svg";
 
 export const Icons = {
   logo,
@@ -53,5 +54,6 @@ export const Icons = {
   youtube,
   masterCard,
   amex,
-  visa
+  visa,
+  rightArrow,
 } as const;

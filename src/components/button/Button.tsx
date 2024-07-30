@@ -1,13 +1,19 @@
 type ButtonProps = {
   label: string;
   icon?: boolean;
+  onClick?: () => void;
 };
 
-const Button: React.FC<ButtonProps> = ({ label, icon: Icon = true }) => {
+const Button: React.FC<ButtonProps> = ({
+  label,
+  icon: Icon = true,
+  onClick = () => {},
+}) => {
   return (
     <button
       type="button"
       className="w-fit text-white bg-neutral-900 hover:bg-neutral-800 focus:ring-4 focus:outline-none focus:ring-neutral-500 font-normal rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center"
+      onClick={onClick}
     >
       {label}
       {Icon && (

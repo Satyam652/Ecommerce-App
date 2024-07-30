@@ -4,7 +4,7 @@ import {
   Route,
   RouterProvider,
 } from "react-router-dom";
-import { Home } from "../pages";
+import { Home, Listing } from "../pages";
 import ProtectedRoute from "./ProtectedRoute";
 import PublicRoute from "./PublicRoute";
 import { Routes } from "../constants";
@@ -29,7 +29,8 @@ const RootRouter = () => {
       <>
         {/* Define public routes */}
         {/* <Route element={<PublicRoute isAuthenticated={isAuthenticated} />}> */}
-          <Route path={Routes.home} element={<Home />} />
+        <Route path={Routes.home} element={<Home />} />
+        <Route path={Routes.products} element={<Listing />} />
         {/* </Route> */}
 
         {/* Define protected routes */}

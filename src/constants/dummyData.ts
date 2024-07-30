@@ -45,3 +45,33 @@ export const productList2 = [
     price: "$30.00",
   },
 ];
+
+export const categories = [
+  { id: "perfume", label: "Perfume" },
+  { id: "trousers", label: "Trousers" },
+  { id: "shoe", label: "Shoe" },
+  { id: "handbag", label: "Handbag" },
+  { id: "hat", label: "Hat" },
+  { id: "thermos", label: "Thermos" },
+];
+
+export const colors = [
+  { id: "lightBlue", color: "#A3BEF8" },
+  { id: "yellow", color: "#FFD58A" },
+  { id: "green", color: "#83B18B" },
+  { id: "darkBlue", color: "#4078FF" },
+];
+
+export const sizes = [
+  { id: "s", label: "S" },
+  { id: "m", label: "M" },
+  { id: "l", label: "L" },
+  { id: "xl", label: "XL" },
+  { id: "xxl", label: "XXL" },
+];
+
+export const options = [
+  { value: 'chocolate', label: 'Chocolate' },
+  { value: 'strawberry', label: 'Strawberry' },
+  { value: 'vanilla', label: 'Vanilla' },
+];
